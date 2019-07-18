@@ -29,7 +29,7 @@ def hdf5_to_pb(h5_model,output_dir,model_name,out_prefix = "output_",log_tensorb
         import_pb_to_tensorboard.import_to_tensorboard(osp.join(output_dir,model_name),output_dir)
 
 #output path
-output_dir = osp.join(os.getcwd(),"trans_model")
+output_dir = osp.join(os.getcwd(),"tensorflow_model")
 
 #load Keras(hdf5) model
 h5_model = load_model(weight_file_path)
