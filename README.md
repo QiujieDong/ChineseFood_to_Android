@@ -33,5 +33,5 @@
 
 
 ### 参考
-[[tensorflow android]](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android)
-[[dy_guox]](https://blog.csdn.net/dy_guox/article/details/80192343)
+- [[tensorflow android]](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android)
+- [[dy_guox]](https://blog.csdn.net/dy_guox/article/details/80192343)
