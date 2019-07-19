@@ -24,7 +24,13 @@
 - 将自己的.pb文件和label.txt拷贝到assets文件夹下
 - 将ClassifierActivity.java中的MODEL_FILE改成自己的pb名称
 - 将ClassifierActivity.java中的LABEL_FILE改成自己的label文件
+- 将INPUT_NAME和OUTPUT_NAME改成与自己在tensorboard记录下来的input和output名称，一般为‘input_1’和‘output_1’
 - 如果只需要Classify这一个软件，那么将主文件夹下的AndroidManifest.xml中的其他的不需要的注释掉，注意这里不是bin目录下的AndroidManifest.xml
 - 点击run或者Debug
 
 我遇到一个问题就是生成的apk进行分类时不输出label,在Debug时发现在ClassifierActivity.java找到TensorFlowImageClassifier.create，点击进入，然后找到final int numClasses = (int) operation.output(idx: 0).shape().size(i: 1);我Debug这里，然后Evaluate值 operation.output(0).shape().size(0)才是我的类别总数10，所以修改final int numClasses = (int) operation.output(idx: 0).shape().size(i: 0)
+
+
+
+### 参考
+[[dy_guox]](https://blog.csdn.net/dy_guox/article/details/80192343)
